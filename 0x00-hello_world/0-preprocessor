@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Set the C file name
+CFILE=$1
+
+# Check if the C file exists
+if [ ! -f "$CFILE" ]; then
+    echo "C file not found: $CFILE"
+    exit 1
+fi
+
+# Generate the output file name
+OUTPUT_FILE="${CFILE%.c}.o"
+
+# Compile the C file without linking
+gcc -c "$CFILE" -o "$OUTPUT_FILE"
+
+echo "Compilation successful. Output file: $OUTPUT_FILE"
