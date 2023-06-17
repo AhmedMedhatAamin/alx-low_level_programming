@@ -1,1 +1,1 @@
-rints all single digit numbers of base 10 starting from 0, followed by a new line
+prints all the numbers of base 16 in lowercase, followed by a new line
