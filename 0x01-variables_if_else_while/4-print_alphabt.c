@@ -3,25 +3,25 @@
  * main - Entry point
  *
  * Description: This program prints the alphabet in lowercase,
- * followed by uppercase, using the putchar function.
+ * excluding the letters 'q' and 'e', using only two putchar functions.
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-    char lowercase = 'a';
-    char uppercase = 'A';
-    while (lowercase <= 'z')
+    char letter = 'a';
+    while (letter <= 'z')
     {
-        putchar(lowercase);
-        lowercase++;
-    }
-    while (uppercase <= 'Z')
-    {
-        putchar(uppercase);
-        uppercase++;
+        if (letter != 'e' && letter != 'q')
+        {
+            putchar(letter);
+            letter++;
+        }
+        else
+        {
+            letter++;
+        }
     }
     putchar('\n');
     return (0);
 }
-
