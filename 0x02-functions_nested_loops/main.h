@@ -1,7 +1,6 @@
-#ifndef MAIN_H
-#define MAIN_H
+#include "main.h"
 
-int _putchar(char c);
-int print_last_digit(int n);
-
-#endif /* MAIN_H */
+int add(int num1, int num2)
+{
+    return num1 + num2;
+}
