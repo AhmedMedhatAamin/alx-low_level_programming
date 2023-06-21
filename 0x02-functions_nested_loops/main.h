@@ -1,6 +1,7 @@
-#include "main.h"
+#ifndef MAIN_H
+#define MAIN_H
 
-int add(int num1, int num2)
-{
-    return num1 + num2;
-}
+int _putchar(char c);
+int add(int num1, int num2);
+
+#endif /* MAIN_H */

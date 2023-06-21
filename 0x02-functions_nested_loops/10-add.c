@@ -1,2 +1,6 @@
-// functio to do what do you want.
-int add(int num1, int num2);
+#include "main.h"
+
+int add(int num1, int num2)
+{
+    return num1 + num2;
+}
