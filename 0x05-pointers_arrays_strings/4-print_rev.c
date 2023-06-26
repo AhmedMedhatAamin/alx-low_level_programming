@@ -2,22 +2,20 @@
 
 /**
  * print_rev - Prints a string in reverse
- * @s: The string to be printed
+ * @s: The string to print
  */
 void print_rev(char *s)
 {
-	int i = 0;
+	int length = 0;
+	int i;
 
-	while (s[i] != '\0')
-		i++;
+	/* Find the length of the string */
+	while (s[length] != '\0')
+		length++;
 
-	i--; /* Decrement to skip the null terminator */
-
-	while (i >= 0)
-	{
+	/* Print the string in reverse */
+	for (i = length - 1; i >= 0; i--)
 		_putchar(s[i]);
-		i--;
-	}
 
 	_putchar('\n');
 }
