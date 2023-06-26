@@ -4,12 +4,12 @@
  * _putchar - Writes a character to stdout
  * @c: The character to be written
  *
- * Return: On success, the character written.
- *         On error, -1 is returned, and errno is set appropriately.
+ * Return: Always 0 (Success)
  */
 int _putchar(char c)
 {
-	/* Function implementation */
+	(void)c;
+	return (0);
 }
 
 /**
