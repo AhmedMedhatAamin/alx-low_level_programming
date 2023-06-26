@@ -1,6 +1,6 @@
 #include "main.h"
 
-int _putchar(char c); // Declaration of _putchar function
+int _putchar(char c); /* Declaration of _putchar function */
 
 /**
  * _puts - Prints a string followed by a new line
@@ -8,10 +8,10 @@ int _putchar(char c); // Declaration of _putchar function
  */
 void _puts(char *str)
 {
-	while (*str != '\0')
-	{
-		_putchar(*str);
-		str++;
-	}
-	_putchar('\n');
+    while (*str != '\0')
+    {
+        _putchar(*str);
+        str++;
+    }
+    _putchar('\n');
 }
