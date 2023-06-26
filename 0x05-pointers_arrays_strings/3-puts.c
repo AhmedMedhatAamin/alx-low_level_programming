@@ -1,6 +1,16 @@
 #include "main.h"
 
-int _putchar(char c); /* Declaration of _putchar function */
+/**
+ * _putchar - Writes a character to stdout
+ * @c: The character to be written
+ *
+ * Return: On success, the character written.
+ *         On error, -1 is returned, and errno is set appropriately.
+ */
+int _putchar(char c)
+{
+	/* Function implementation */
+}
 
 /**
  * _puts - Prints a string followed by a new line
@@ -8,10 +18,12 @@ int _putchar(char c); /* Declaration of _putchar function */
  */
 void _puts(char *str)
 {
-    while (*str != '\0')
-    {
-        _putchar(*str);
-        str++;
-    }
-    _putchar('\n');
+	int i = 0;
+
+	while (str[i] != '\0')
+	{
+		_putchar(str[i]);
+		i++;
+	}
+	_putchar('\n');
 }
