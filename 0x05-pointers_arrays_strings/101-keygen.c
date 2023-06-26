@@ -17,9 +17,9 @@ int main(void)
         char nextChar;
 
         if (randomValue < 26)
-            nextChar = 'A' + randomValue; /* Uppercase letter */
+            nextChar = 'a' + randomValue; /* Lowercase letter */
         else if (randomValue < 52)
-            nextChar = 'a' + (randomValue - 26); /* Lowercase letter */
+            nextChar = 'A' + (randomValue - 26); /* Uppercase letter */
         else
             nextChar = '0' + (randomValue - 52); /* Digit */
 
