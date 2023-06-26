@@ -6,7 +6,7 @@
 
 int main(void)
 {
-    char password[PASSWORD_LENGTH + 1]; // +1 for null terminator
+    char password[PASSWORD_LENGTH + 1]; /* +1 for null terminator */
     int i;
 
     srand(time(0));
@@ -17,16 +17,16 @@ int main(void)
         char nextChar;
 
         if (randomValue < 26)
-            nextChar = 'A' + randomValue; // Uppercase letter
+            nextChar = 'A' + randomValue; /* Uppercase letter */
         else if (randomValue < 52)
-            nextChar = 'a' + (randomValue - 26); // Lowercase letter
+            nextChar = 'a' + (randomValue - 26); /* Lowercase letter */
         else
-            nextChar = '0' + (randomValue - 52); // Digit
+            nextChar = '0' + (randomValue - 52); /* Digit */
 
         password[i] = nextChar;
     }
 
-    password[PASSWORD_LENGTH] = '\0'; // Null terminator
+    password[PASSWORD_LENGTH] = '\0'; /* Null terminator */
 
     printf("%s\n", password);
 
