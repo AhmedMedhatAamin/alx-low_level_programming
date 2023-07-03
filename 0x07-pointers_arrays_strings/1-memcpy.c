@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * _memcpy - Copies a memory area
@@ -10,15 +10,10 @@
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-    unsigned int itr;
+	unsigned int itr;
 
-    /* Iterate through each byte in the source memory area */
-    for (itr = 0; itr < n; itr++)
-    {
-        /* Copy the byte from source to destination */
-        dest[itr] = src[itr];
-    }
+	for (itr = 0; itr < n; itr++)
+		dest[itr] = src[itr];
 
-    /* Return the pointer to the destination memory area */
-    return dest;
+	return dest;
 }
