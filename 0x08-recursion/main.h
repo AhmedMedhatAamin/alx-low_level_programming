@@ -1,11 +1,9 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-/* Function prototypes */
+/* Function declarations (prototypes) */
 void _puts_recursion(char *s);
 void _print_rev_recursion(char *s);
-int _strlen_recursion(char *s);
-int factorial(int n);
+/* Add your own function declarations here */
 
-
-#endif
+#endif /* MAIN_H */
