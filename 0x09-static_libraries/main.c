@@ -1,7 +1,28 @@
 #include "main.h"
-
-int main(void)
+/**
+ * _strspn - Entry point
+ * @s: input
+ * @accept: input
+ * Return: Always 0 (Success)
+ */
+unsigned int _strspn(char *s, char *accept)
 {
-    _puts("\"At the end of the day, my goal was to be the best hacker\"\n\t- Kevin Mitnick");
-    return (0);
+        unsigned int n = 0;
+        int r;
+
+        while (*s)
+        {
+                for (r = 0; accept[r]; r++)
+                {
+                        if (*s == accept[r])
+                        {
+                                n++;
+                                break;
+                        }
+                        else if (accept[r + 1] == '\0')
+                                return (n);
+                }
+                s++;
+        }
+        return (n);
 }
