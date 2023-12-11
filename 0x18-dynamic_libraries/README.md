@@ -1,0 +1,1 @@
+liberey dynamic and static
